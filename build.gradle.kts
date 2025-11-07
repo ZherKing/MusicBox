@@ -3,7 +3,7 @@ plugins {
     id("io.github.goooler.shadow") version "8.1.7"
     id("io.freefair.lombok") version "8.6"
     id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
-    id("io.papermc.paperweight.userdev") version "1.7.1" apply false
+    id("io.papermc.paperweight.userdev") version "1.7.7" apply false
 }
 
 bukkit {
@@ -69,4 +69,8 @@ dependencies {
     api(project(":nms:versions:20_5", "reobf"))
     api(project(":nms:versions:21", "reobf"))
     api(project(":nms:versions:21_2", "reobf"))
+    // 21_3, 21_4, 21_5 使用纯 Bukkit API，不需要 reobf
+    api(project(":nms:versions:21_3"))
+    api(project(":nms:versions:21_4"))
+    api(project(":nms:versions:21_5"))
 }

@@ -24,8 +24,19 @@ public class JukeboxFactory {
                 case "1.21.3":
                     className = START_PATH + "V21_2";
                     break;
+                case "1.21.4":
+                    className = START_PATH + "V21_3";
+                    break;
+                case "1.21.5":
+                    className = START_PATH + "V21_4";
+                    break;
+                case "1.21.6":
+                case "1.21.7":
+                case "1.21.8":
+                case "1.21.9":
+                case "1.21.10":
                 default:
-                    className = null;
+                    className = START_PATH + "V21_5";
                     break;
             }
         } else if (iV == 20) {
