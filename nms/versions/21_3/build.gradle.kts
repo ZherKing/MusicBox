@@ -1,3 +1,7 @@
+plugins {
+    id("io.papermc.paperweight.userdev")
+}
+
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
@@ -7,7 +11,6 @@ repositories {
 }
 
 dependencies {
-    // 使用纯 Bukkit API，不需要 NMS
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
 }
 
